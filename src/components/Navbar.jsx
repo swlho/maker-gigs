@@ -6,7 +6,7 @@ const Navbar = () => {
         <ul>
             <li>
                 <a href="">
-                    <img src="src/assets/Makers-Logo.png" alt="" />
+                    <img src="public/assets/Makers-Logo.png" alt="" />
                 </a>
             </li>
             <li>

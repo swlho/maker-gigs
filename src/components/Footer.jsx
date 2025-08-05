@@ -8,7 +8,7 @@ const Footer = () => {
             <li className="footer-link"><a href="">Careers</a></li>
             <li className="footer-link"><a href="">Privacy</a></li>
         </ul>
-        <a href="/"><img id="footer-logo" src="src/assets/Makers-Logo.png"/></a>
+        <a href="/"><img id="footer-logo" src="public/assets/Makers-Logo.png"/></a>
         <p>© 2025</p>
     </div>
   )
