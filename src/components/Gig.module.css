@@ -1,0 +1,41 @@
+.gig-div {
+    display: block;
+    height: 28rem;
+    padding: 1rem;
+    margin: 1rem;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gig-div:hover {
+    transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(1.05);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.band-img {
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.heart-btn {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  /* smooth heart shape via SVG mask */
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29.6"><path fill="white" d="M23.6,0C20.4,0,17.6,2.2,16,4.5C14.4,2.2,11.6,0,8.4,0C3.8,0,0,3.8,0,8.4 c0,9.4,16,21.2,16,21.2s16-11.8,16-21.2C32,3.8,28.2,0,23.6,0z"/></svg>') center/contain no-repeat;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29.6"><path fill="white" d="M23.6,0C20.4,0,17.6,2.2,16,4.5C14.4,2.2,11.6,0,8.4,0C3.8,0,0,3.8,0,8.4 c0,9.4,16,21.2,16,21.2s16-11.8,16-21.2C32,3.8,28.2,0,23.6,0z"/></svg>') center/contain no-repeat;
+  transition: transform .2s;
+}
+
+.heart-btn:active {
+  transform: scale(.95);
+}
