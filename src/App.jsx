@@ -60,20 +60,22 @@ function App() {
     });
   }, [gigData, favourites]);
 
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <h2>Featured Gigs</h2>
-      <div className="gigs-container">
-        {sortedGigs.map((gig) => (
+  const gigCards = sortedGigs.map((gig) => (
           <Gig
             key={gig.id}
             gig={gig}
             isFavourite={favourites.includes(gig.id)}
             handleClick={() => handleClick(gig.id)}
           />
-        ))}
+        ))
+
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <h2>Featured Gigs</h2>
+      <div className="gigs-container">
+        {gigCards}
       </div>
       <LandingBody />
       <Footer />
